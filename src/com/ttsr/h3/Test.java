@@ -30,7 +30,7 @@ public class Test {
             for (char c : textLine.toCharArray() ) {
                 stack.push(c);
             }
-            for (int i = 0; i < textLine.length(); i++) {
+            while(!stack.isEmpty()) {
                 System.out.print(stack.pop());
             }
             System.out.println();
